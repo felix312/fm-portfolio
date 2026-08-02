@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+  /* ===== Felix Mwenda / Voldemort Technologies brand tokens ===== */
+  --navy: #0D1117;      /* primary background */
+  --navy-deep: #070A0F; /* deeper layer for depth */
+  --bar: #1A1A2E;       /* footers / total bars */
+  --red: #E8002D;       /* accents / shapes */
+  --red-glow: #FF3B57;
+  --blue: #1A73E8;      /* labels / highlights */
+  --blue-glow: #4DA3FF;
+  --gold: #FFC107;      /* totals / status */
+  --white: #FFFFFF;
+  --grey: #F5F7FA;
+  --muted: #9AA3B2;
+  --ink: #C6CCD8;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-bar: var(--bar);
+  --color-red: var(--red);
+  --color-red-glow: var(--red-glow);
+  --color-blue: var(--blue);
+  --color-blue-glow: var(--blue-glow);
+  --color-gold: var(--gold);
+  --color-white: var(--white);
+  --color-grey: var(--grey);
+  --color-muted: var(--muted);
+  --color-ink: var(--ink);
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--navy);
+}
+
+body {
+  background: var(--navy);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+
+::selection {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* Gradient text utility — used sparingly on the one or two headlines that should "pop" */
+.grad-text {
+  background: linear-gradient(115deg, var(--white) 15%, var(--blue-glow) 55%, var(--red-glow) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grad-text-alt {
+  background: linear-gradient(100deg, var(--gold) 0%, var(--red-glow) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Faint circuit-trace backdrop, pure CSS/SVG — no raster images, stays light */
+.circuit-bg {
+  background-image:
+    linear-gradient(rgba(154,163,178,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(154,163,178,0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.noise-fade {
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+}
+
+a {
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bar);
+  border: 2px solid var(--navy);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
