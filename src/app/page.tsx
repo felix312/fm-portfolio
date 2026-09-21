@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ParallaxCyber from "@/components/ParallaxCyber";
+import GrowthGraphic from "@/components/GrowthGraphic";
+import SkillsGraphic from "@/components/SkillsGraphic";
+import EducationGraphic from "@/components/EducationGraphic";
+import BackToTop from "@/components/BackToTop";
 import { SectionHeading } from "@/components/Bits";
 import CaseCard from "@/components/CaseCard";
 import ReelCard from "@/components/ReelCard";
@@ -58,8 +62,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="seo" className="border-b border-white/10 py-20">
-          <div className="mx-auto max-w-5xl px-6">
+        <section id="seo" className="relative overflow-hidden border-b border-white/10 py-20">
+          <GrowthGraphic />
+          <div className="relative z-10 mx-auto max-w-5xl px-6">
             <Reveal>
               <SectionHeading title="SEO & Digital Growth" note="SUPPORTING WORK" />
             </Reveal>
@@ -82,8 +87,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="skills" className="border-b border-white/10 py-20">
-          <div className="mx-auto max-w-5xl px-6">
+        <section id="skills" className="relative overflow-hidden border-b border-white/10 py-20">
+          <SkillsGraphic />
+          <div className="relative z-10 mx-auto max-w-5xl px-6">
             <Reveal>
               <SectionHeading title="Skills" note="TOOLKIT" />
             </Reveal>
@@ -91,8 +97,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="education" className="border-b border-white/10 py-20">
-          <div className="mx-auto max-w-5xl px-6">
+        <section id="education" className="relative overflow-hidden border-b border-white/10 py-20">
+          <EducationGraphic />
+          <div className="relative z-10 mx-auto max-w-5xl px-6">
             <Reveal>
               <SectionHeading title="Education & Certifications" note="CREDENTIALS" />
             </Reveal>
@@ -103,6 +110,7 @@ export default function Home() {
         <ContactSection />
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

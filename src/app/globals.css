@@ -49,6 +49,11 @@ html {
   background: var(--navy);
 }
 
+section[id],
+header[id] {
+  scroll-margin-top: 84px;
+}
+
 body {
   background: var(--navy);
   color: var(--white);
