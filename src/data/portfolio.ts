@@ -31,7 +31,7 @@ export type CaseStudy = {
 export const securityCases: CaseStudy[] = [
   {
     title: "Cybersecurity Engineer — Network Security & Incident Response",
-    org: "Joytown Liquor Store",
+    org: "Joytown Business Company",
     period: "Sept 2026 — Present",
     description:
       "Called in on an active breach — a Wi-Fi-level intrusion that escalated into a full email compromise, locking staff out of their own accounts. Diagnosed the attack chain same-day, shut down every entry point, and turned a single-incident callout into a full 3-branch security overhaul the client is still funding today.",
