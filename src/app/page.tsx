@@ -12,6 +12,7 @@ import Reveal from "@/components/Reveal";
 import {
   securityCases,
   reelCases,
+  growthCases,
   seoCards,
 } from "@/data/portfolio";
 
@@ -60,9 +61,14 @@ export default function Home() {
         <section id="seo" className="border-b border-white/10 py-20">
           <div className="mx-auto max-w-5xl px-6">
             <Reveal>
-              <SectionHeading title="SEO & Digital Support" note="SUPPORTING WORK" />
+              <SectionHeading title="SEO & Digital Growth" note="SUPPORTING WORK" />
             </Reveal>
-            <div className="grid gap-6 sm:grid-cols-2">
+            <div className="space-y-5">
+              {growthCases.map((c, i) => (
+                <CaseCard item={c} key={c.title + c.org} delay={i * 0.08} />
+              ))}
+            </div>
+            <div className="mt-5 grid gap-6 sm:grid-cols-2">
               {seoCards.map((c, i) => (
                 <Reveal delay={i * 0.08} key={c.title}>
                   <div className="rounded-md border border-white/[0.08] bg-white/[0.02] p-7">

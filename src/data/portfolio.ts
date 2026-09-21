@@ -30,6 +30,23 @@ export type CaseStudy = {
 
 export const securityCases: CaseStudy[] = [
   {
+    title: "Cybersecurity Engineer — Network Security & Incident Response",
+    org: "Joytown Liquor Store",
+    period: "Sept 2026 — Present",
+    description:
+      "Called in on an active breach — a Wi-Fi-level intrusion that escalated into a full email compromise, locking staff out of their own accounts. Diagnosed the attack chain same-day, shut down every entry point, and turned a single-incident callout into a full 3-branch security overhaul the client is still funding today.",
+    stats: [
+      { num: "Same-Day", label: "breach diagnosis & full account recovery" },
+      { num: "WPA2 → WPA3-SAE", label: "wireless security upgraded network-wide" },
+      { num: "3-Branch", label: "hardening roadmap now underway" },
+    ],
+    tags: [
+      { label: "Incident Response", tone: "red" },
+      { label: "Network Hardening", tone: "red" },
+      { label: "Breach Containment", tone: "red" },
+    ],
+  },
+  {
     title: "Security Consultant — ERP Systems",
     org: "Lumena Tech Co.",
     period: "2025 — 2026",
@@ -122,6 +139,26 @@ export const reelCases: ReelCase[] = [
       { label: "Video Editing", tone: "red" },
       { label: "Visual Storytelling", tone: "red" },
       { label: "Brand Consistency", tone: "red" },
+    ],
+  },
+];
+
+export const growthCases: CaseStudy[] = [
+  {
+    title: "SEO & Digital Growth Strategist",
+    org: "Orbit Tokens & SharpShell Digital Consulting",
+    period: "2026",
+    description:
+      "Ran full competitive SEO teardown for two client platforms — a B2B sweepstakes software brand and a US-based digital consultancy — uncovering indexing gaps, duplicate metadata, and broken pages quietly bleeding organic traffic. Turned raw technical audits into director-ready growth cases that got fixes greenlit and implementation moving.",
+    stats: [
+      { num: "6+", label: "competitors benchmarked head-to-head" },
+      { num: "29 Pages", label: "meta titles & descriptions rebuilt for CMS launch" },
+      { num: "30-Day", label: "implementation roadmap delivered per client" },
+    ],
+    tags: [
+      { label: "Technical SEO Audits", tone: "blue" },
+      { label: "Competitor Analysis", tone: "blue" },
+      { label: "Director-Level Reporting", tone: "blue" },
     ],
   },
 ];
