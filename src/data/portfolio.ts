@@ -32,13 +32,13 @@ export const securityCases: CaseStudy[] = [
   {
     title: "Cybersecurity Engineer — Network Security & Incident Response",
     org: "Joytown Business Company",
-    period: "Sept 2026 — Present",
+    period: "2026",
     description:
-      "Called in on an active breach — a Wi-Fi-level intrusion that escalated into a full email compromise, locking staff out of their own accounts. Diagnosed the attack chain same-day, shut down every entry point, and turned a single-incident callout into a full 3-branch security overhaul the client is still funding today.",
+      "Called in on an active breach — a Wi-Fi-level intrusion that escalated into a full email compromise, locking staff out of their own accounts. Diagnosed the attack chain same-day, shut down every entry point, and delivered a full 3-branch security overhaul before the engagement closed.",
     stats: [
       { num: "Same-Day", label: "breach diagnosis & full account recovery" },
       { num: "WPA2 → WPA3-SAE", label: "wireless security upgraded network-wide" },
-      { num: "3-Branch", label: "hardening roadmap now underway" },
+      { num: "3-Branch", label: "hardening rollout completed" },
     ],
     tags: [
       { label: "Incident Response", tone: "red" },
@@ -230,8 +230,30 @@ export const education = [
   },
 ];
 
+export const stitchProject = {
+  name: "Stitch Security Software",
+  shortName: "S.S.S",
+  role: "Founder & Lead Architect",
+  status: "In Development",
+  tagline:
+    "A SaaS vulnerability-analysis and risk-reporting platform, built to give lean security and IT teams the visibility usually locked behind enterprise tooling.",
+  description:
+    "Designing and building a cloud-based security dashboard that scans client infrastructure, scores risk, and reports it in plain, actionable terms — the kind of tool I kept wishing existed during client incident response work. The architecture deliberately blends software engineering with hands-on cybersecurity practice, aiming toward AI-driven, SIEM-style alerting that pushes critical findings straight to a CIO or IT lead in real time.",
+  modules: [
+    "Security Dashboard",
+    "Vulnerability List & Detail",
+    "Risk Report Summary",
+    "Scan Management",
+    "Real-Time AI Alerting",
+  ],
+  roadmapNote: "6-phase, 6-month build roadmap — currently in active development.",
+  sellLine:
+    "Built solo, end to end — product thinking, UX design, and security architecture in one person. If your team needs someone who can own a product like this rather than just ship tickets, this is the proof.",
+};
+
 export const navLinks = [
   { label: "Security", href: "#security" },
+  { label: "Venture", href: "#stitch" },
   { label: "Video", href: "#video" },
   { label: "SEO", href: "#seo" },
   { label: "Skills", href: "#skills" },

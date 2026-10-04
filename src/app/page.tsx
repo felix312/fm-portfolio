@@ -5,6 +5,7 @@ import GrowthGraphic from "@/components/GrowthGraphic";
 import SkillsGraphic from "@/components/SkillsGraphic";
 import EducationGraphic from "@/components/EducationGraphic";
 import BackToTop from "@/components/BackToTop";
+import StitchShowcase from "@/components/StitchShowcase";
 import { SectionHeading } from "@/components/Bits";
 import CaseCard from "@/components/CaseCard";
 import ReelCard from "@/components/ReelCard";
@@ -47,6 +48,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <StitchShowcase />
 
         <section id="video" className="relative overflow-hidden border-b border-white/10 py-20">
           <ParallaxCyber variant="b" />
